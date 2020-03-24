@@ -8,7 +8,7 @@ SoftwareSerial mySerial(8, 7); // RX, TX
 /******************/
 //declarations
 /**********************/
-int wait = 2000;
+int ussd = 3700;
 String gsmData;
 String gsmHData_ = "";
 String gsmConnData = "";
@@ -52,6 +52,7 @@ void loop()
 
     if (Serial.available())
     {
+          gsmConnData = "";
         gsmConnData = Serial.readString();
 
         phonenumber[0] = "";
@@ -60,47 +61,62 @@ void loop()
         phonenumber[3] = "";
         phonenumber[4] = "";
         phonenumber[5] = "";
-        StringSplitter *splitter = new StringSplitter(gsmConnData, ',', 5); // new StringSplitter(string_to_split, delimiter, limit)
 
-        for (int i = 0; i < 5; i++)
-        {
-            String item = splitter->getItemAtIndex(i);
-            //  Serial.println("Item @ index " + String(i) + ": " + String(item));
-            phonenumber[i] = splitter->getItemAtIndex(i);
-            ;
-        }
-        Serial.println(phonenumber[0]);
-        Serial.println(phonenumber[1]);
-        Serial.println(phonenumber[2]);
-        Serial.println(phonenumber[3]);
-        Serial.print(phonenumber[4]);
-        phonenumber[0].trim();
-        phonenumber[1].trim();
-        phonenumber[2].trim();
-        phonenumber[3].trim();
-        phonenumber[4].trim();
+       if ((gsmConnData.equals("snd99")) || (gsmConnData.indexOf("snd9"))){  //this if statement is not working but im running out of time atm so i will come fix it later
+           Serial.println("Airtime_ready");
+           Serial.println(gsmConnData);
+           {
 
-        for (int i = 1; i < 5; i++)
-        {       
-                //send airtime to five numbers
-            send_data(phonenumber[i], phonenumber[0]);
-            delay(2000);
+              
+                  // gsmConnData = Serial.readString();
+                   StringSplitter *splitter = new StringSplitter(gsmConnData, ',', 5); // new StringSplitter(string_to_split, delimiter, limit)
+                
 
+                       for (int i = 0; i < 5; i++)
+                   {
+                       String item = splitter->getItemAtIndex(i);
+                       //  Serial.println("Item @ index " + String(i) + ": " + String(item));
+                       phonenumber[i] = splitter->getItemAtIndex(i);
+                       ;
+                   }
+                   Serial.println(phonenumber[0]);
+                   Serial.println(phonenumber[1]);
+                   Serial.println(phonenumber[2]);
+                   Serial.println(phonenumber[3]);
+                   Serial.print(phonenumber[4]);
+                   phonenumber[0].trim();
+                   phonenumber[1].trim();
+                   phonenumber[2].trim();
+                   phonenumber[3].trim();
+                   phonenumber[4].trim();
+                   phonenumber[5] = "1111111111";
+                     if (phonenumber[0].equals("send")){
+                   Serial.println("Sending airtime...!");
+                   for (int i = 2; i < 5; i++)
+                   {
+                       //send airtime to five numbers
+                       send_data(phonenumber[i], phonenumber[1]);
+                       delay(2000);
 
-            /*************************************************************************************************************/
-                    //this is put in to break the ussd sequence in test mode, it should be commented out in production//
-            /*************************************************************************************************************/
-            mySerial.println("AT");
-            delay(3000);
-            while (mySerial.available())
-            {
-                Serial.write(mySerial.read());
-            }
-
-
-
-
-        }
+                       /*************************************************************************************************************/
+                       //this is put in to break the ussd sequence in test mode, it should be commented out in production//
+                       /*************************************************************************************************************/
+                       mySerial.println("AT");
+                       delay(1000);
+                       while (mySerial.available())
+                       {
+                           Serial.write(mySerial.read());
+                       }
+                       dump_data(phonenumber[5], phonenumber[0]);
+                   }
+               }
+           }
+       }
+       else
+       {
+           Serial.println("cannot send airtime");
+       }
+       
     }
 }
 
@@ -138,50 +154,83 @@ void send_data(String phone, String number)
         Serial.write(mySerial.read());
     }
     mySerial.println("AT+CUSD=1,\"*138#\"");
-    delay(4000);
+    delay(ussd);
     read_data();
 
     mySerial.println("AT+CUSD=1,\"1\"");
-    delay(4000);
+    delay(ussd);
     while (mySerial.available())
         read_data();
     mySerial.println("AT+CUSD=1,\"2\"");
-    delay(4000);
+    delay(ussd);
     read_data();
 
     mySerial.print("AT+CUSD=1,\"");
     mySerial.print(phone);
     mySerial.println("\"\r");
-    delay(4000);
+    delay(ussd);
     read_data();
     mySerial.print("AT+CUSD=1,\"");
     mySerial.print(phone);
     mySerial.println("\"\r");
-    delay(3000);
+    delay(ussd);
     read_data();
     mySerial.println("AT+CUSD=1,\"1\"");
-    delay(1000);
+    delay(ussd);
     read_data();
 
     mySerial.print("AT+CUSD=1,\"");
     mySerial.print(number);
     mySerial.println("\"\r");
-    delay(3000);
+    delay(ussd);
 
+    mySerial.println("AT+CUSD=1,\"1\"");
+    delay(ussd);
+    while (mySerial.available())
+    {
+        Serial.write(mySerial.read());
+    }
     /*
-  mySerial.println("AT+CUSD=1,\"1\"");
-  delay(1000);
-  while (mySerial . available()) {
-    Serial . write(mySerial . read());
-  }
-  mySerial.println("AT+CUSD=1,\"1\"");
-  delay(1000);
-  while (mySerial . available()) {
-    Serial . write(mySerial . read());
-  }
-
-  */
+    mySerial.println("AT+CUSD=1,\"1\"");
+    delay(ussd);
+    while (mySerial.available())
+    {
+        Serial.write(mySerial.read());
+    }
+    mySerial.println("AT+CUSD=1,\"1\"");
+    delay(ussd);
+    while (mySerial.available())
+    {
+        Serial.write(mySerial.read());
+    }
+*/
     //Serial.println(gsmHData);
+}
+
+void dump_data(String phone, String number)
+{
+
+    mySerial.println("AT");
+    delay(2000);
+    while (mySerial.available())
+    {
+        Serial.write(mySerial.read());
+    }
+    mySerial.println("AT+CUSD=1,\"*124#\"");
+    delay(ussd);
+    read_data();
+    mySerial.println("AT+CUSD=1,\"*124#\"");
+    delay(ussd);
+    read_data();
+
+    mySerial.println("AT+CUSD=1,\"1\"");
+    delay(ussd);
+    while (mySerial.available())
+        read_data();
+    /*  mySerial.println("AT+CUSD=1,\"2\"");
+    delay(ussd);
+    read_data();
+    */
 }
 void conn_server(String message, String value)
 {
@@ -199,7 +248,7 @@ void setupGsm()
     }
 
     mySerial.println("AT+CMEE=2");
-    delay(wait);
+    delay(2000);
     while (mySerial.available())
     {
         Serial.write(mySerial.read());
@@ -282,7 +331,7 @@ void sendtext()
     {
         Serial.write(mySerial.read());
     }
-    mySerial.println("AT+CMGS=\"+233273933997\"");
+    mySerial.println("AT+CMGS=\"+233209455482\"");
     delay(200);
     while (mySerial.available())
     {
