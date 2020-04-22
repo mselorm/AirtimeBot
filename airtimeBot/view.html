@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Airtimebot</title>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            // var currentUrl = window.location.href;
+
+            // // Given that we're at a url like 'users/:id', this saves the unique id of the user whose show page we are currently
+
+            //var userID = currentUrl.substr(currentUrl.lastIndexOf('/') + 1);
+
+            setInterval(function () {  
+                $.ajax({
+                    url: "./airtimebot.php",
+                    method: "GET",
+                    data: {
+                        isData: "111112222",
+                      //  page: 4,
+                      // phone: "0550466880, 0593718387"
+                    },
+                    success: function (data, textStatus, jqXHR) {
+                        $('.table').html(data);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        alert(errorThrown);
+
+                    }
+                })
+
+                console.log('the remove button is click');
+             //   alert(data.Serialise());
+
+            }, 3000);
+
+        });
+
+
+    </script>
+z
+</head>
+
+
+
+<body>
+
+    <div class="hello" align=center>
+        <h1>hello, waiting for update</h1>
+
+    </div> <h1>
+    <div class="table" align=center>
+
+    </div>
+</h1>
+
+</body>
+
+</html>

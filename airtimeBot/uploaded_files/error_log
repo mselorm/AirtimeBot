@@ -1,0 +1,23 @@
+[27-Mar-2020 18:11:27 UTC] PHP Notice:  Undefined variable: output in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/read.php on line 59
+[27-Mar-2020 18:15:46 UTC] PHP Notice:  Undefined variable: output in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/read.php on line 87
+[27-Mar-2020 18:16:57 UTC] PHP Notice:  Undefined variable: output in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/read.php on line 87
+[27-Mar-2020 18:19:41 UTC] PHP Notice:  Undefined variable: output in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/read.php on line 35
+[27-Mar-2020 18:19:48 UTC] PHP Notice:  Undefined variable: output in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/read.php on line 35
+[27-Mar-2020 18:24:44 UTC] PHP Notice:  Undefined variable: output in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/read.php on line 35
+[27-Mar-2020 19:26:07 UTC] PHP Notice:  Undefined variable: conn in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[27-Mar-2020 19:26:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[27-Mar-2020 19:26:07 UTC] PHP Notice:  Undefined variable: conn in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[27-Mar-2020 19:26:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[27-Mar-2020 19:36:33 UTC] PHP Notice:  Undefined variable: conn in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[27-Mar-2020 19:36:33 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[27-Mar-2020 19:36:33 UTC] PHP Notice:  Undefined variable: conn in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[27-Mar-2020 19:36:33 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[27-Mar-2020 19:37:09 UTC] PHP Notice:  Undefined variable: conn in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[27-Mar-2020 19:37:09 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[27-Mar-2020 19:37:09 UTC] PHP Notice:  Undefined variable: conn in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[27-Mar-2020 19:37:09 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 35
+[28-Mar-2020 06:04:50 UTC] PHP Warning:  include_once(upload.php): failed to open stream: No such file or directory in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 3
+[28-Mar-2020 06:04:50 UTC] PHP Warning:  include_once(): Failed opening 'upload.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/insert.php on line 3
+[28-Mar-2020 06:21:57 UTC] PHP Notice:  Undefined variable: file_data in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/truncate.php on line 20
+[28-Mar-2020 06:21:57 UTC] PHP Warning:  fgetcsv() expects parameter 1 to be resource, null given in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/truncate.php on line 20
+[28-Mar-2020 06:21:57 UTC] PHP Notice:  Undefined variable: type in /home/vxkgn0fmfwww/public_html/app.bvs.airtimebot/airtimeBot/uploaded_files/truncate.php on line 34
