@@ -55,10 +55,10 @@ switch ($gsm_Status) {
             $result = mysqli_query($conn, $sql);
                     if(!$result){
                         echo  $conn->connect_error;
-                    }
+                    }echo "<br>"; 
 
         //second
-            $second = $myarr[0]; echo $second;  echo "<br>"; 
+            $second = $myarr[1];  
           $phone_ = substr($second, 1, 10);       
            $status_ = substr($second, 11, strlen($second)); 
            echo "cell no. " .$phone_      ;
@@ -69,7 +69,7 @@ switch ($gsm_Status) {
                  $result = mysqli_query($conn, $sql);
                     if(!$result){
                         echo  $conn->connect_error;
-                    }
+                    }echo "<br>"; 
           //third
             $third = $myarr[2];
            $phone_ = substr($third, 1, 10);       
@@ -82,7 +82,7 @@ switch ($gsm_Status) {
                  $result = mysqli_query($conn, $sql);
                     if(!$result){
                         echo  $conn->connect_error;
-                    }
+                    }echo "<br>"; 
               //four
             $fouth = $myarr[3];
            $phone_ = substr($fouth, 1, 10);       
