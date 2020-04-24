@@ -39,7 +39,7 @@ $conn = mysqli_connect("localhost", "vxkgn0fmfwww", ">##e(a}T%5P", "TuaTuaGye Da
     }
 
 
-        //echo $output;
+        
     }
 
 
