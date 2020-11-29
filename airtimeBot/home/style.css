@@ -106,6 +106,8 @@ nav {
 	animation: drop 1.5s ease;
 }
 
+
+
 .big-circle {
 	position: absolute;
 	top: 0px;
@@ -114,6 +116,10 @@ nav {
 	opacity: 0.5;
 	height: 80%;
 }
+
+
+
+
 .medium-circle {
 	position: absolute;
 	top: 30%;
@@ -147,6 +153,8 @@ nav {
 		transform: translateY(0px);
 	}
 }
+
+
 
 @media screen and (max-width: 1024px) {
 	.presentation {
