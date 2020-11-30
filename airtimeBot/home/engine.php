@@ -36,7 +36,7 @@ function userlogin(){
               "status" => "success",
               "message" => "login successful...!"
             );
-
+            $_SESSION['login'] = true;
               } else {
                 $response = array(
                   "status" => "failed",
