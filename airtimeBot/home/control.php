@@ -25,18 +25,18 @@ header("location: ../index.html ");
 
             <h3 id="logo"> AirtimeBot | Control Panel </h3>
 
-            <img src="./Hamburger_icon.svg.png" alt="" srcset="" class="humburger">
+            <!-- <img src="./Hamburger_icon.svg.png" alt="" srcset="" class="humburger"> -->
         </nav>
         <section>
-            <div class="hero">
-                <img src="./img/robot_limbs.png" alt="dream" srcset="">
-                <h1 class="headline"> Powered by Brich Company</h1>
+            <div class="hero ">
+                <img src="./img/robot_limbs.png" alt="" srcset="">
+                <h4 class="headline ">Dream Brich</h4>
             </div>
         </section>
 
     </header>
 
-    <div class="slider"></div>
+    <div class="slider "></div>
 
 
 
