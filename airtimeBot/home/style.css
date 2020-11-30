@@ -156,6 +156,19 @@ nav {
 
 
 
+
+/*#sidebar*/
+.controlbar, .sidebar, .off-canvas{
+	height: 100vh; 
+	background: #b3b300;
+}
+
+.bar{
+	height: 200px;
+	background-color: #ffff8c;
+}
+
+
 @media screen and (max-width: 1024px) {
 	.presentation {
 		flex-direction: column;
