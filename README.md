@@ -1,4 +1,4 @@
-<p align="center"><img src="logo.jpg" width="400"></p>
+<p align="center"><img src="two gsm.png" width="400"></p>
 
 <p align="center">
 <a href="http://airtimebot.brichghaha.com"> Website here </a>
