@@ -161,11 +161,17 @@ nav {
 .controlbar, .sidebar, .off-canvas{
 	height: 100vh; 
 	background: #b3b300;
+	z-index: 1;
 }
 
 .bar{
-	height: 200px;
+	height: 100px;
 	background-color: #ffff8c;
+	z-index: -11;
+}
+.logout{
+	position: relative;
+	right: 0;
 }
 
 

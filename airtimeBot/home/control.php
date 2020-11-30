@@ -23,25 +23,10 @@ header("location: ../index.html ");
   </head>
   <body>
 
- <!--    <header>
-        <nav>
 
-            <h3 id="logo"> AirtimeBot | Control Panel </h3>
-
-        </nav>
-        <section>
-            <div class="hero ">
-                <img src="./img/robot_limbs.png" alt="" srcset="">
-                <h4 class="headline ">Dream Brich</h4>
-            </div>
-        </section>
-
-    </header>
-
-    <div class="slider "></div>
--->
+<div class="all" style="display: none;">
 <div class="bar">
-<a href="logout.php"><img id="uimg_" src="logout.png" alt="" width="40" height="40"></a>
+<a href="logout.php"><img class="logout" src="logout.png" alt="" width="40" height="40"></a>
 </div>
 <div class="  controlbar">
 <a class="navbar-brand brand-logo" href="#">
@@ -121,6 +106,8 @@ header("location: ../index.html ");
         </ul>
       </nav>
 
+
+
 <style>
   body{
 	background-color: #f1f1f1;
@@ -128,6 +115,20 @@ header("location: ../index.html ");
 </style>
 
 </div>
+</div>
+
+<header>
+    
+    <section>
+        <div class="hero ">
+            <img src="./img/robot_limbs.png" alt="" srcset="">
+            <h4 class="headline ">Dream Brich</h4>
+        </div>
+    </section>
+
+</header>
+
+<div class="slider "></div>
 
 
 
