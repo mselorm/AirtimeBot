@@ -13,13 +13,7 @@ fromTo(hero, 1.2, { width: "100%" }, { width: "80%", ease: Power2.easeInOut})
     .fromTo(humburger, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0, ease: Power2.easeInOut }, "-=0.5")
     .fromTo(headline, 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 , ease: Power2.easeInOut }, "-=0.5");
 
-
-    /*
-     * 
-     * the timelinemax lib does all the work
-     * as long as the webpage is properly div using class u can animate almost anithing
-     * just make sure the syntax is well comma separated
-     * 
-     * 
-     * 
-     */
+setTimeout(() => {
+    $('.slider').remove();
+    $('.headline').remove();  
+}, 3000);
