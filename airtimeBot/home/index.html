@@ -18,7 +18,7 @@
 	<body>
 		<header>
 			<div class="logo-container" >
-				<img src="./img/logo.png" alt="logo" style="display: none;" />
+				<!-- <img src="./img/logo.png" alt="logo" style="display: none;" /> -->
 
 				<!-- <h4 class="logo alert-dark" style="font-weight:1000 ;"> <strong >Product of Brich Company Ltd</strong></h4> -->
 			</div>
@@ -40,7 +40,7 @@
 						<button class="cta-add">View Website</button>
 					</div>
 				</div>
-				<div class="cover">
+				<div class="cover" style="display: none;">
 					<!-- <img src="./img/ratty.png" alt="matebook" /> -->
 					<img src="./img/robot.png" alt="matebook" />
 					<!-- <img src="./img/ratty.png" alt="matebook" /> -->
@@ -87,34 +87,10 @@
 	  <input type="password" class="form-control input-field" id="password" name="password"
 		  placeholder="password">
   </div>
-  
-  
-  
-  
+ 
   </div>
   
   </form>
-
-
-
-  	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   
 		</div>
 		<div class="modal-footer" style=" color: white; background: #cbda03;">
@@ -139,22 +115,28 @@
 					URL image converter :   https://www.online-convert.com/result#j=5839186e-88df-42dd-bb1b-d69d2b5663da  
 				*/
 
-
+					// alert("someing");
 				$('.cover img ').hide();
 				$(function () {
 					
 			
 				setTimeout(() => {
+					// $(selector).css(propertyName, value);
+				$('.cover').css('display','block');
 				$('.cover img ').show();
 					
 				}, 1000);
 			});
-				$('.submit-answers').click(function (e) { 
+			
+
+
+					$('.submit-answers').click(function (e) { 
 					e.preventDefault();
 					// alert("submiting data ....!");
 					let password = $('#password').val();
 					let user = $('#user').val();
-					console.log($('#user').val());
+					console.log(user);
+
 					$.ajax({
 						type: "POST",
 						url: "route.php?func=userlogin",
@@ -162,14 +144,21 @@
 							password : password,
 							user     : user
 						},
-						success: function (response) {
-					$('.response').html(response);
-					console.log(response);
-				
-						if (response =="success" ){
-					$('.response').html("login successful");
+					// 	beforeSend : function() {
+					// $('.response').html("ajax call");
+                   	// 	 },
 
-					window.location.href = "control.php"
+					   success: function (response) {
+							var response1 = $.parseJSON(response);
+						$('.response').html(response1['message']);
+						console.log(response1['message']);
+						console.log(response1['status']);
+				
+						if (response1['status'] == "success" ){
+						// $('.response').html("login successful");
+						$('.response').css('color', 'green');
+
+						window.location.href = "control.php"
 
 						}
 					
@@ -177,6 +166,12 @@
 						}
 					});
 				});
+
+
+
+
+					     
+
 
 			</script>
 	</body>
