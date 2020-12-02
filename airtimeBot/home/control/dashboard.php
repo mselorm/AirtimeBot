@@ -219,7 +219,7 @@ font-size: 1.3rem;
                       <tr>
                         <td>1</td>
                         <td>0542235971</td>
-                        <td><button type="submit" class="btn mycolor btn-primary current-bal">click here</button></td>
+                        <td><button type="submit" class="btn mycolor btn-primary current-bal"   data-toggle="modal" data-target="#current-bal">click here</button></td>
                         <td><button type="submit" class="btn mycolor btn-primary recharge">click here</button></td>
                       </tr>
                       <td>2</td>
@@ -238,16 +238,45 @@ font-size: 1.3rem;
                 </div>
               </div>
             </div>
+            <div class="col-lg-6 col-md-12 "style="margin-top: -200px;">
+            <img src="../img/robot_limbs.png" alt="" srcset="" width="500" height="300">
+            </div>
           </div>
 
 
-          <div class="row" >
 
-<div class="col-lg-3 col-md-6 col-sm-6">
-<img src="./img/robot-limbs.png" alt="" srcset="">
-</div>
         </div>
       </div>
+
+
+
+
+
+
+      <!-- modal -->
+
+
+      <div class="modal fade" id="current-bal" tabindex="-1" role="dialog" aria-labelledby="current-bal" aria-hidden="true">
+	    <div class="modal-dialog">
+	    <div class="modal-content">
+		  <div class="modal-header" style=" color: white; background: #cbda03;">
+		  <h4 class="modal-title" id="myModalLabel"></h4>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		  </div>
+		  <div class="modal-body" style="background-color:   #0d0e0f;">
+		  <h3 style="color: white">Current Balance </h3>
+      <img src="load.gif" alt="" srcset="">
+  
+		  </div>
+		<div class="modal-footer" style=" color: white; background: #cbda03;">
+		  <button type="button" class="btn btn-primary submit-answers" style=" color: white; background: black">Submit</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left" style="visibility: hidden;">
@@ -278,8 +307,8 @@ font-size: 1.3rem;
             &copy;
             <script>
               document.write(new Date().getFullYear())
-            </script>, made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+            </script>,  <i class="material-icons">favorite</i> by
+            <a href="http://brichghana.com" target="_blank">Brich Company</a> 
           </div>
         </div>
       </footer>
