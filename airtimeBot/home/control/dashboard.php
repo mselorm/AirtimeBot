@@ -33,16 +33,20 @@
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  " >
+          <li class="nav-item   " >
             <a class="nav-link load-airtime" href="#">
-              <i class="material-icons load-airtime">dashboard</i>
-              <p><h3 class="load-airtime">Load Airtime</h3></p>
+              <!-- <i class="material-icons load-airtime">dashboard</i> -->
+              <p><h3 class="load-airtimee"> <div class="btn btn-dark"><h4>Load Airtime </h4></div></h3></p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link send-airtime" href="#">
-              <i class="material-icons send-airtime">person</i>
-              <p><h3 class="send-airtime">Send Airtime</h3></p>
+            <a class="nav-link send-airtimee" href="#">
+              <!-- <i class="material-icons send-airtime">person</i> -->
+              <p><h3 class="send-airtime"> <div class=" btn btn-danger"><h4>Send Airtime</h4></div></h3></p>
+              <!-- <p><h3 class="send-airtime"></h3></p> -->
+
+ 
+
             </a>
           </li>
 
@@ -188,16 +192,16 @@
             </div>
           </div>
 
-<style>
-  .myfont{
-font-family: cursive;
-font-size: 1.3rem;
-  }
-  .mycolor{
-    color:#af9e08;
-  }
-</style>    
-          <div class="row">
+          <style>
+            .myfont{
+          font-family: cursive;
+          font-size: 1.3rem;
+            }
+            .mycolor{
+              color:#af9e08;
+            }
+          </style>    
+          <div class="row loading-airtimee" >
 
             <div class="col-lg-6 col-md-12" style="margin-top: -200px; color:#af9e08" >
               <div class="card">
@@ -208,29 +212,26 @@ font-size: 1.3rem;
                 <div class="card-body table-responsive">
                   <table class="table table-hover">
                     <thead class="text-warning">
-                      <th>#</th>
-                      <th>Sim card <div class="sim-icon">
-                      </div></th>
-
+                    <th>   <i class="material-icons">android</i> </th>
                       <th>Current Balance</th>
                       <th>Recharge</th>
                     </thead>
                     <tbody>
                       <tr>
                         <td>1</td>
-                        <td>0542235971</td>
-                        <td><button type="submit" class="btn mycolor btn-primary current-bal"   data-toggle="modal" data-target="#current-bal">click here</button></td>
-                        <td><button type="submit" class="btn mycolor btn-primary recharge">click here</button></td>
+                        <td>Bot 1</td>
+                        <td><button type="submit" class="btn mycolor btn-warning current-bal"   data-toggle="modal" data-target="#current-bal">click here</button></td>
+                        <td><button type="submit" class="btn mycolor btn-info recharge" data-toggle="modal" data-target="#recharge">click here</button></td>
                       </tr>
                       <td>2</td>
-                        <td>0542235971</td>
-                        <td><button type="submit" class="btn btn-primary current-bal">click here</button></td>
-                        <td><button type="submit" class="btn btn-primary recharge">click here</button></td>
+                        <td>Bot 2</td>
+                        <td><button type="submit" class="btn btn-warning current-bal" data-toggle="modal" data-target="#current-bal">click here</button></td>
+                        <td><button type="submit" class="btn btn-info recharge" data-toggle="modal" data-target="#recharge">click here</button></td>
                       </tr>
                       <td>3</td>
-                        <td>0542235971</td>
-                        <td><button type="submit" class="btn btn-primary current-bal">click here</button></td>
-                        <td><button type="submit" class="btn btn-primary recharge">click here</button></td>
+                        <td>Bot 3</td>
+                        <td><button type="submit" class="btn btn-warning current-bal"  data-toggle="modal" data-target="#current-bal">click here</button></td>
+                        <td><button type="submit" class="btn btn-info recharge" data-toggle="modal" data-target="#recharge">click here</button></td>
                       </tr>
   
                     </tbody>
@@ -243,7 +244,55 @@ font-size: 1.3rem;
             </div>
           </div>
 
+          <div class="row sending-airtimee" style="display:none">
 
+          <div class="col-lg-6 col-md-12" style="margin-top: -200px; color:#af9e08" >
+          <div class="card">
+          <div class="card-header card-header-warning" style="  background: linear-gradient(60deg, #e02907, #f07546)">
+            <h3 class="card-title myfont">Sending Airtime</h3>
+            <p class="card-category myfont">Upload excel file containing numbers to recieve airtime </p>
+          </div>
+
+          <div class="row">
+            <div class="col-sm"> <div class="btn-facebook">Upload Excel</div></div>
+            <div class="col-sm"><div class="btn-info">Send Airtime</div></div>
+          </div>
+          <div class="card-body table-responsive">
+            <table class="table table-hover">
+              <thead class="text-warning">
+              <th>phone no. </th>
+                <th>car no. </th>
+
+          <th>tracker ID</th>
+          <th>Date Updated</th>
+          <th>Delete</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bot 1</td>
+            <td><button type="submit" class="btn mycolor btn-warning current-bal"   data-toggle="modal" data-target="#current-bal">click here</button></td>
+            <td><button type="submit" class="btn mycolor btn-info recharge" data-toggle="modal" data-target="#recharge">click here</button></td>
+            <td><button type="submit" class="btn mycolor btn-info recharge" data-toggle="modal" data-target="#recharge">click here</button></td>
+          </tr>
+          <td>2</td>
+            <td>Bot 2</td>
+            <td><button type="submit" class="btn btn-warning current-bal" data-toggle="modal" data-target="#current-bal">click here</button></td>
+            <td><button type="submit" class="btn btn-info recharge" data-toggle="modal" data-target="#recharge">click here</button></td>
+          </tr>
+          <td>3</td>
+            <td>Bot 3</td>
+            <td><button type="submit" class="btn btn-warning current-bal"  data-toggle="modal" data-target="#current-bal">click here</button></td>
+            <td><button type="submit" class="btn btn-info recharge" data-toggle="modal" data-target="#recharge">click here</button></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>
 
         </div>
       </div>
@@ -267,11 +316,32 @@ font-size: 1.3rem;
 		  </div>
 		  <div class="modal-body" style="background-color:   #0d0e0f;">
 		  <h3 style="color: white">Current Balance </h3>
-      <img src="load.gif" alt="" srcset="">
-  
+      <img src="../preloader.gif" alt="" srcset="" width="450" height="350" class="load" style="display: none;">
+      
+    <h3> <span style ="color:#af9e08">GH&#8373; </span>  0.00 </h3>
 		  </div>
 		<div class="modal-footer" style=" color: white; background: #cbda03;">
-		  <button type="button" class="btn btn-primary submit-answers" style=" color: white; background: black">Submit</button>
+		  <button type="button" class="btn btn-primary check-bal" style=" color: white; background: black">Click here</button>
+		</div>
+	  </div>
+	</div>
+  </div>
+
+  <div class="modal fade" id="recharge" tabindex="-1" role="dialog" aria-labelledby="recharge" aria-hidden="true">
+	    <div class="modal-dialog">
+	    <div class="modal-content">
+		  <div class="modal-header" style=" color: white; background: #cbda03;">
+		  <h4 class="modal-title" id="myModalLabel"></h4>
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+		  </div>
+		  <div class="modal-body" style="background-color:   #0d0e0f;">
+		  <h3 style="color: white">Sim Card No. </h3>
+      
+    <h1> <span style ="color:#af9e08"> 0542235971 </span>  </h1>
+		  </div>
+		<div class="modal-footer" style=" color: white; background: #cbda03;">
 		</div>
 	  </div>
 	</div>
@@ -282,22 +352,22 @@ font-size: 1.3rem;
           <nav class="float-left" style="visibility: hidden;">
             <ul>
               <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
+                <a href="ok">
+                  ok
                 </a>
               </li>
               <li>
-                <a href="https://creative-tim.com/presentation">
-                  About Us
+                <a href="ok">
+                ok Us
                 </a>
               </li>
               <li>
-                <a href="http://blog.creative-tim.com">
+                <a href="ok">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="https://www.creative-tim.com/license">
+                <a href="ok">
                   Licenses
                 </a>
               </li>
@@ -599,9 +669,22 @@ font-size: 1.3rem;
   <script>
 
 
-$('.sim-icon').after("");
+$('.check-bal').click(function (e) { 
+  e.preventDefault();
+  
+  $('.load').css('display', 'block');
+});
+
+$('.send-airtmee').click(function (e) { 
+  e.preventDefault();
+  $('.loading-airtimee').fadeOut();
+  setTimeout(() => {
+    $('sending-airtimee').fadeIn('slow');
+  }, 2000);
 
 
+  
+});
 
 
     $(document).ready(function() {
