@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/logo.png">
+  <link rel="icon" type="image/png" href="../img/logo.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
  AirtimeBot | Dashboard
   </title>
+  
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -22,26 +23,26 @@
 <body class="">
   <div class="wrapper ">
     <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-      <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
-        Tip 2: you can also add an image using data-image tag
-    -->
       <div class="logo"><a href="#" class="simple-text logo-normal">
-         AirtimeBot
+        <img src="../logo.jpg" alt="" width="250" height="120">
+        <br>
+        <br>
+        <br>
+         <h2 style="font-weight: 1000">AirtimeBot</h2>
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
+          <li class="nav-item active  " >
             <a class="nav-link load-airtime" href="#">
               <i class="material-icons load-airtime">dashboard</i>
-              <p><h4 class="load-airtime">Load Airtime</h4></p>
+              <p><h3 class="load-airtime">Load Airtime</h3></p>
             </a>
           </li>
           <li class="nav-item ">
             <a class="nav-link send-airtime" href="#">
               <i class="material-icons send-airtime">person</i>
-              <p><h4 class="send-airtime">Send Airtime</h4></p>
+              <p><h3 class="send-airtime">Send Airtime</h3></p>
             </a>
           </li>
 
@@ -186,77 +187,29 @@
               </div>
             </div>
           </div>
-          <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
+<style>
+  .myfont{
+font-family: cursive;
+font-size: 1.3rem;
+  }
+  .mycolor{
+    color:#af9e08;
+  }
+</style>    
           <div class="row">
 
-            <div class="col-lg-6 col-md-12" style="margin-top: -200px;">
+            <div class="col-lg-6 col-md-12" style="margin-top: -200px; color:#af9e08" >
               <div class="card">
-                <div class="card-header card-header-warning">
-                  <h4 class="card-title">Employees Stats</h4>
-                  <p class="card-category">New employees on 15th September, 2016</p>
+                <div class="card-header card-header-warning" style="  background: linear-gradient(60deg, #ffec26, #fb8c00)">
+                  <h3 class="card-title myfont">Load Airtime</h3>
+                  <p class="card-category myfont">Click on the bot u want to recharge </p>
                 </div>
                 <div class="card-body table-responsive">
                   <table class="table table-hover">
                     <thead class="text-warning">
                       <th>#</th>
                       <th>Sim card <div class="sim-icon">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<g>
-		<g>
-			<path d="M444.875,109.792L338.167,3.125c-2-2-4.708-3.125-7.542-3.125H149.333C133.608,0,120,8.642,112.6,21.333h175.358
-				c8.542,0,16.583,3.333,22.625,9.375l106.708,106.667c6.042,6.042,9.375,14.083,9.375,22.625v303.4
-				C439.358,456,448,442.392,448,426.667V117.333C448,114.5,446.875,111.792,444.875,109.792z"/>
-			<path d="M295.5,45.792c-2-2-4.708-3.125-7.542-3.125H106.667C83.135,42.667,64,61.802,64,85.333v384
-				C64,492.865,83.135,512,106.667,512h256c23.531,0,42.667-19.135,42.667-42.667V160c0-2.833-1.125-5.542-3.125-7.542L295.5,45.792
-				z M213.333,224c0-5.896,4.771-10.667,10.667-10.667h32c5.896,0,10.667,4.771,10.667,10.667v42.667
-				c0,5.896-4.771,10.667-10.667,10.667h-32c-5.896,0-10.667-4.771-10.667-10.667V224z M128,245.333c0-17.646,14.354-32,32-32
-				h21.333c5.896,0,10.667,4.771,10.667,10.667v42.667c0,5.896-4.771,10.667-10.667,10.667h-42.667
-				c-5.896,0-10.667-4.771-10.667-10.667V245.333z M192,437.333c0,5.896-4.771,10.667-10.667,10.667H160c-17.646,0-32-14.354-32-32
-				v-21.333c0-5.896,4.771-10.667,10.667-10.667h42.667c5.896,0,10.667,4.771,10.667,10.667V437.333z M277.333,437.333
-				c0,5.896-4.771,10.667-10.667,10.667H224c-5.896,0-10.667-4.771-10.667-10.667v-42.667c0-5.896,4.771-10.667,10.667-10.667
-				h42.667c5.896,0,10.667,4.771,10.667,10.667V437.333z M341.333,416c0,17.646-14.354,32-32,32
-				c-5.896,0-10.667-4.771-10.667-10.667v-64c0-5.885-4.781-10.667-10.667-10.667H138.667c-5.896,0-10.667-4.771-10.667-10.667
-				v-42.667c0-5.896,4.771-10.667,10.667-10.667h192c5.896,0,10.667,4.771,10.667,10.667V416z M341.333,266.667
-				c0,5.896-4.771,10.667-10.667,10.667h-32c-5.896,0-10.667-4.771-10.667-10.667V224c0-5.896,4.771-10.667,10.667-10.667h10.667
-				c17.646,0,32,14.354,32,32V266.667z"/>
-		</g>
-	</g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-<g>
-</g>
-</svg>
-
                       </div></th>
 
                       <th>Current Balance</th>
@@ -265,34 +218,34 @@
                     <tbody>
                       <tr>
                         <td>1</td>
-                        <td>Dakota Rice</td>
-                        <td>$36,738</td>
-                        <td>Niger</td>
+                        <td>0542235971</td>
+                        <td><button type="submit" class="btn mycolor btn-primary current-bal">click here</button></td>
+                        <td><button type="submit" class="btn mycolor btn-primary recharge">click here</button></td>
                       </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>Minerva Hooper</td>
-                        <td>$23,789</td>
-                        <td>Curaçao</td>
+                      <td>2</td>
+                        <td>0542235971</td>
+                        <td><button type="submit" class="btn btn-primary current-bal">click here</button></td>
+                        <td><button type="submit" class="btn btn-primary recharge">click here</button></td>
                       </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>Sage Rodriguez</td>
-                        <td>$56,142</td>
-                        <td>Netherlands</td>
+                      <td>3</td>
+                        <td>0542235971</td>
+                        <td><button type="submit" class="btn btn-primary current-bal">click here</button></td>
+                        <td><button type="submit" class="btn btn-primary recharge">click here</button></td>
                       </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>Philip Chaney</td>
-                        <td>$38,735</td>
-                        <td>Korea, South</td>
-                      </tr>
+  
                     </tbody>
                   </table>
                 </div>
               </div>
             </div>
           </div>
+
+
+          <div class="row" >
+
+<div class="col-lg-3 col-md-6 col-sm-6">
+<img src="./img/robot-limbs.png" alt="" srcset="">
+</div>
         </div>
       </div>
       <footer class="footer">
@@ -617,7 +570,7 @@
   <script>
 
 
-$('.sim-icon').css('max-width, 10px');
+$('.sim-icon').after("");
 
 
 
