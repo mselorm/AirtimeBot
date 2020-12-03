@@ -24,89 +24,6 @@ header("location: ../index.html ");
   <body>
 
 
-<div class="all" style="display: none;">
-<div class="bar">
-<a href="logout.php"><img class="logout" src="logout.png" alt="" width="40" height="40"></a>
-</div>
-<div class="  controlbar">
-<a class="navbar-brand brand-logo" href="#">
-    
-    <nav class="sidebar sidebar-offcanvas" id="sidebar" >
-    
-        <ul class="nav">
-          <li class="nav-item nav-profile">
-            <a href="#" class="nav-link">
-              <div class="profile-image">
-
-                <div class="dot-indicator bg-success"></div>
-              </div>
-              <div class="text-wrapper">
-                <p class="profile-name">Admin</p>
-              
-              </div>
-
-
-
-            </a>
-          </li>
-          <li class="nav-item nav-category">Main Menu</li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#" id="all">
-              <i class="menu-icon typcn document-text" id="all"></i>
-              <span class="menu-title" id="all">View  All Records</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="modifycustomer">
-              <i class="menu-icon typcn typcn-shopping-bag" id="modifycustomer"></i>
-              <span class="menu-title" id="modifycustomer">View Pending Deliveries</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"  id="viewrecent_signup_">
-              <i class="menu-icon typcn typcn-coffee1" id="viewrecent_signup_"></i>
-              <span class="menu-title" id="viewrecent_signup_">Sign Up new Customer</span>
-              
-            </a>
-    
-          </li>
-     
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="viewrecent_signup">
-              <i class="menu-icon typcn typcn-document-text" id="viewrecent_signup"></i>
-              <span class="menu-title" id="viewrecent_signup">View Recent Sign Ups</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="menu-icon typcn typcn-th-large-outline" id="recent_collections"></i>
-              <span class="menu-title" id="recent_collections">View Recent Collections</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="collect_add">
-              <i class="menu-icon typcn typcn-bell" id="collect_add"></i>
-              <span class="menu-title" id="collect_add">Add New Collection</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="agent_activity">
-              <i class="menu-icon typcn typcn-user-outline" id="agent_activity"></i>
-              <span class="menu-title" id="agent_activity">View Sales Agent Activity</span>     
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="auth" id="new_member" data-toggle="modal">
-              <i class="menu-icon typcn typcn-document-add" id="new_member" data-toggle="modal" ></i>
-              <span class="menu-title" id="new_member" data-toggle="modal" >Add Signup/Collection Agent</span>
-              <i class=""></i>
-            </a>
-  
-          </li>
-        </ul>
-      </nav>
-
-
 
 <style>
   body{
@@ -114,15 +31,13 @@ header("location: ../index.html ");
 }
 </style>
 
-</div>
-</div>
 
 <header>
     
     <section>
         <div class="hero ">
-            <img src="./img/robot_limbs.png" alt="" srcset="">
-            <h4 class="headline ">Dream Brich</h4>
+            <!-- <img src="./img/robot_limbs.png" alt="" srcset=""> -->
+            <h6 class="headline "></h6>
         </div>
     </section>
 
@@ -132,7 +47,10 @@ header("location: ../index.html ");
 
 
 
+<div class="container-fluid">
 
+<h1 style="color: white">only view the page in dosktop mode</h1>
+</div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tweenjs/1.0.2/tweenjs.min.js"></script>
@@ -141,6 +59,19 @@ header("location: ../index.html ");
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
+
+    <script>
+  console.log($(window).width());
+  setInterval(() => {
+    if ($(window).width() > 1000) {
+    window.location = "./control/dashboard.php";  
+}
+    
+  }, 2000);
+
+</script>
+
+
   </body>
 </html>
  

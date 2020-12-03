@@ -53,13 +53,17 @@ header("location: ../index.html ");
   <script src="../assets/demo/demo.js"></script>
 
 
-  
+
 
 <script>
   console.log($(window).width());
-if ($(window).width() < 860) {
-window.location = "../control.php";  
+  setInterval(() => {
+    if ($(window).width() < 1000) {
+    window.location = "../control.php";  
 }
+    
+  }, 2000);
+
 </script>
 
 <!DOCTYPE html>
