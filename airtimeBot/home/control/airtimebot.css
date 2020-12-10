@@ -6,3 +6,11 @@
     width: 30%;
     padding: 12px;
 }
+.topic-img{
+    display: flex;
+}
+.footer{
+    background-color: lightslategrey;
+    height: 110px;  
+    width: 100%;
+}
