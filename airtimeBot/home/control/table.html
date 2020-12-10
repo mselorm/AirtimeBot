@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="../assets/css/material-dashboard.css?v=2.1.2"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../bootstrap.css" />
+
+    <link rel="stylesheet" href="table.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="btn-position">
+        <input type="button" class="button-1" value="UPLOAD EXCEL" />
+        <input type="button" class="button-2" value="SEND AIRTIME" />
+      </div>
+    <div class="container container-pos">
+      <div id="main-content  ">
+          <table class="center">
+          <thead>
+            <tr>
+              <th>Phone Number</th>
+              <th>Car Number</th>
+              <th>Tracker ID</th>
+              <th>Date-Last</th>
+              <th>Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Michael</td>
+              <td>Selorm</td>
+              <td>Selly</td>
+              <td>Mikel</td>
+              <td>
+                <input
+                  type="button"
+                  class="btn btn-danger btn-block"
+                  value="Del"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Michael</td>
+              <td>Selorm</td>
+              <td>Selly</td>
+              <td>Mikel</td>
+              <td>
+                <input type="button"class="btn btn-danger btn-block"value="Del" />
+              </td>
+            </tr>
+            <tr>
+              <td>Michael</td>
+              <td>Selorm</td>
+              <td>Selly</td>
+              <td>Mikel</td>
+              <td>
+                <input
+                  type="button"
+                  class="btn btn-danger btn-block"
+                  value="Del"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Michael</td>
+              <td>Selorm</td>
+              <td>Selly</td>
+              <td>Mikel</td>
+              <td>
+                <input
+                  type="button"
+                  class="btn btn-danger btn-block"
+                  value="Del"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+       
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="container">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Import CSV File</h3>
+          </div>
+          <div class="panel-body">
+            <span id="message"></span>
+            <form
+              id="sample_form"
+              method="POST"
+              enctype="multipart/form-data"
+              class="form-horizontal"
+            >
+              <div class="form-group">
+                  <div class="csv-border">
+                    <label class="col-md-4 control-label">Select CSV File</label>
+                    <input type="file" name="file" id="file" />
+                  </div>
+              </div>
+              <div class="form-group" align="center">
+                <input type="hidden" name="hidden_field" value="1" />
+                <input
+                  type="submit"
+                  name="import"
+                  id="import"
+                  class="btn btn-info"
+                  value="UPLOAD"
+                />
+              </div>
+            </form>
+            <div class="form-group" id="process" style="display: none">
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped active"
+                  role="progressbar"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                >
+                  <span id="process_data">0</span> -
+                  <span id="total_data">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progress"></div>
+  </body>
+</html>
